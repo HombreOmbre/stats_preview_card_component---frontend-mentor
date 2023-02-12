@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    /* main background */
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    /* card background */
+    --soft-violet: hsl(277, 64%, 61%);
+    /* accent */
+    --white: hsl(0, 0%, 100%);
+    /* main heading, stats */
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* main paragraph */
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+    /* stat headings */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: var(--very-dark-blue);
+}
+
+img,
+picture,
+source {
+    display: block;
+    width: 100%;
+    height: 300;
+    object-fit: cover;
+    -webkit-filter: hue-rotate(277deg);
+    filter: hue-rotate(276.9deg);
+    border-radius: 0 5px 5px 0;
+}
+
+.contener {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    justify-content: center;
+    height: auto;
+}
+
+.left_side {
+    background: var(--dark-desaturated-blue);
+    padding: 50px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    flex: 1 0%;
+    border-radius: 5px 0 0 5px;
+}
+
+.txt-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_txt {
+    margin-bottom: 30px;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 30px;
+}
+
+.clr {
+    color: var(--soft-violet);
+}
+
+.second_txt {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    color: var(--slightly-transparent-white);
+    font-weight: 700;
+}
+
+.info_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right_side {
+    flex: 1 0%;
+}
+
+.bold_info {
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.small_info {
+    color: var(--slightly-transparent-white);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
